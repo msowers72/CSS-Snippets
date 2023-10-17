@@ -129,6 +129,18 @@ main {
     transition: all 0.5s ease-in-out;
 }
 
+.code-card .card-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effec */
+    position: relative;
+    margin: -4 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--outer-space);
+    color: var(--heliotrope);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
     header {
