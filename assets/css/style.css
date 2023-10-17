@@ -141,6 +141,28 @@ main {
     transition: all 0.5s ease-in-out;
 }
 
+/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+.code-card .code-block {
+    flex-grow: 1;
+}
+
+.code-card pre {
+    /* set styles to make it so code wraps in <pre> instead of overflowing */
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    color: var(--gin);
+    border-radius: 8px;
+    /* use linear-gradient() function to create a fading backgroud */
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    display: flex;
+    align-items: center;
+}
+
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
     header {
