@@ -92,6 +92,19 @@ main {
     margin: 2rem auto;
 }
 
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
     header {
