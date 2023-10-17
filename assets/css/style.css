@@ -6,6 +6,11 @@
     --heliotrope: #e866ec;
 }
 
+::selection {
+    background-color: var(--bright-turquoise);
+    color: var(--outer-space);
+}
+
 /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc. */
 
 html {
@@ -62,7 +67,7 @@ h6 {
 }
 
 p {
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 code {
@@ -70,3 +75,21 @@ code {
     font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier monospace;
 }
 
+header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+header h1.page-title {
+    padding: 1rem 1.2rem;
+    font-size: 4.5rem;
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%;
+    }
+}
