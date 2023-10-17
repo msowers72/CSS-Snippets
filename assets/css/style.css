@@ -87,6 +87,11 @@ header h1.page-title {
     font-size: 4.5rem;
 }
 
+main {
+    width: 96%;
+    margin: 2rem auto;
+}
+
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
     header {
