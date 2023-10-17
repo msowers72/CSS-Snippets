@@ -105,7 +105,14 @@ main {
     justify-content: center;
 }
 
-
+/* using a mobile -first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem
+}
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
